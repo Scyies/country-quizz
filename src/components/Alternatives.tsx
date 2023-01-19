@@ -45,10 +45,12 @@ export function Alternative({
           'border-green-500 bg-green-500 text-white':
             (selectedAlternative?.answer === alternative && correct) ||
             (selectedAlternative !== null && correct),
-          'border-red-500 bg-red-500 text-white':
+          'text-white border-red-500 bg-red-500 ':
             selectedAlternative?.answer === alternative && !correct,
           'border-blue-500 text-blue-500':
-            selectedAlternative?.answer !== alternative,
+            (selectedAlternative?.answer !== alternative && !correct) ||
+            selectedAlternative === null,
+          'cursor-not-allowed pointer-events-none': selectedAlternative,
         }
       )}
     >

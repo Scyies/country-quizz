@@ -25,6 +25,8 @@ export default function App() {
   const dataNumber = randomNumbers(250);
   const questionNumber = randomNumbers(2);
 
+  console.log(numberOfRightQuestions);
+
   const question =
     !data.loading &&
     generateRandomQuestion(data.data, dataNumber, questionNumber);

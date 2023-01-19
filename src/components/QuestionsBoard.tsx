@@ -27,6 +27,8 @@ export function QuestionsBoard({
     null as ISelectedAlternative | null
   );
 
+  console.log(selectedAlternative);
+
   function nextQuestion() {
     if (selectedAlternative?.correct) setRightQuestion((prev) => prev + 1);
     setSelectedAlternative(null);
