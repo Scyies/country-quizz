@@ -36,8 +36,6 @@ export function QuestionsBoard({
     });
   }
 
-  console.log(alternatives);
-
   return (
     <section className='flex flex-col gap-8 p-8 pt-16 mt-4 bg-white rounded-xl w-[90%] mx-auto max-w-[500px]'>
       <div className='flex flex-col'>
