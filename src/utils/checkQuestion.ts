@@ -134,15 +134,15 @@ export function checkQuestion(
     },
     {
       answer: secondAlternative,
-      correct: false,
+      correct: answer === secondAlternative ? true : false,
     },
     {
       answer: thirdAlternative,
-      correct: false,
+      correct: answer === thirdAlternative ? true : false,
     },
     {
       answer: fourthAlternative,
-      correct: false,
+      correct: answer === fourthAlternative ? true : false,
     },
   ];
 
