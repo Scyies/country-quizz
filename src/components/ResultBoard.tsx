@@ -17,7 +17,7 @@ export function ResultBoard({
     setCounter(0);
   }
   return (
-    <section className='flex flex-col items-center gap-8 p-8 pt-16 mt-4 bg-white rounded-xl w-full max-w-[500px]'>
+    <section className='flex flex-col items-center gap-8 p-8 pt-16 mt-4 bg-white rounded-xl w-full md:w-[500px] max-w-[500px]'>
       <img src={winner} alt='' />
       <h1 className='font-bold text-5xl text-blue-800'>Result</h1>
       <p className='text-blue-800'>

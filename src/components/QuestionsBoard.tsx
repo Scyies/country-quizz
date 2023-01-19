@@ -37,7 +37,7 @@ export function QuestionsBoard({
   }
 
   return (
-    <section className='flex flex-col gap-8 p-8 pt-16 mt-4 bg-white rounded-xl w-[90%] mx-auto max-w-[500px]'>
+    <section className='flex flex-col gap-8 p-8 pt-16 mt-4 bg-white rounded-xl w-[90%] md:w-[500px] mx-auto max-w-[500px]'>
       <div className='flex flex-col'>
         {img && counter > 0 && <img src={img} alt='' height={80} width={200} />}
         {counter > 0 ? (
