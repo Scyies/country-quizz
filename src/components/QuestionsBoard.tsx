@@ -39,7 +39,11 @@ export function QuestionsBoard({
   return (
     <section className='flex flex-col gap-8 p-8 pt-16 mt-4 bg-white rounded-xl w-[90%] md:w-[500px] mx-auto max-w-[500px]'>
       <div className='flex flex-col'>
-        {img && counter > 0 && <img src={img} alt='' height={80} width={200} />}
+        {img && counter > 0 && (
+          <div className='w-[100px] h-[50px] flex'>
+            <img src={img} alt='' height={96} className='object-cover' />
+          </div>
+        )}
         {counter > 0 ? (
           <h2 className='font-bold text-2xl text-blue-900'>{question}</h2>
         ) : (
