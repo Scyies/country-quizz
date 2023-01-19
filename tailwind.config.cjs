@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        bgImage: 'url("./background.png")',
+        bgImage: 'url("/background.png")',
       },
       gridTemplateColumns: {
         alternative: '1fr, 3fr, 1fr',
